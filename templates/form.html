@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Relatório</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script>
+        function addImageField() {
+            const container = document.getElementById('image-fields');
+            const newField = `
+                <div>
+                    <input type="file" name="images" accept="image/*" required>
+                    <input type="text" name="descriptions" placeholder="Descrição da imagem" required>
+                </div>
+            `;
+            container.insertAdjacentHTML('beforeend', newField);
+        }
+    </script>
+</head>
+<body>
+    <h1>Gerar Relatório</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <div id="image-fields">
+            <div>
+                <input type="file" name="images" accept="image/*" required>
+                <input type="text" name="descriptions" placeholder="Descrição da imagem" required>
+            </div>
+        </div>
+        <button type="button" onclick="addImageField()">Adicionar outra imagem</button><br><br>
+        <button type="submit">Gerar Relatório</button>
+    </form>
+</body>
+</html>
+
