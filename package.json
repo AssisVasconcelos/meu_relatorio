@@ -1,0 +1,19 @@
+{
+  "name": "meu_relatorio",
+  "version": "1.0.0",
+  "description": "\"Projeto para gerar relatórios em PDF\"",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "pdf",
+    "relatórios",
+    "imagem"
+  ],
+  "author": "Assis Vasconcelos",
+  "license": "ISC"
+}
