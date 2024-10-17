@@ -15,5 +15,8 @@
     "imagem"
   ],
   "author": "Assis Vasconcelos",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "compressorjs": "^1.2.1"
+  }
 }
